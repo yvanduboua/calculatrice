@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal1.css">
+    <title>calculatrice</title>
+    <script type="text/javascript">
+        function eve(val){
+            var number = val;
+            document.getElementById('saisie').value += number;
+        }
+        function egal(){
+            var reponse = eval(document.getElementById('saisie').value);
+            document.getElementById('saisie').value = reponse;
+        }
+        function carre(number){
+            var nombre = number;
+            nombre = document.getElementById('saisie').value;
+            document.getElementById('saisie').value = Math.sqr(nombre);
+        }
+        function racine(number){
+            var nombre1 = number;
+            nombre1 = document.getElementById('saisie').value;
+            document.getElementById('saisie').value = Math.sqrt(nombre1);
+        }
+        function clean(){
+            var efface = "";
+            document.getElementById('saisie').value = efface;
+        }
+        function back(){
+            var rentre = document.getElementById('saisie').value;
+            rentre = rentre.substring(0, rentre.length - 1);
+            document.getElementById('saisie').value = rentre;
+        }
+
+    </script>
+</head>
+<body>
+    <div class="contenu">
+        <div class="bacground1">
+            <div class="nom">Calculatrice</div>
+        <div class="liste">
+            <div class="egal">≡</div>
+            <div class="stand">STANDARD</div>
+        </div>
+        
+        <div class="entete">
+            <input type="text" id="saisie" value="" autocomplete="off" />
+        </div>
+    
+        
+
+            <ul class="lig1">
+                <li class="li1">MC</li>
+                <li class="li1">MR</li>
+                <li class="bouton">M+</li>
+                <li class="bouton">M-</li>
+                <li class="bouton">MS</li>
+                <li class="li1">M`</li>
+            </ul>
+            
+       
+            <ul class="lig2">
+                <li class="bouton" onclick="eve('%')">%</li>
+                <li class="bouton" onclick="racine()">√</li>
+                <li class="bouton" onclick="carre(4)">x²</li>
+                <li class="bouton" onclick="eve('1/x')">1/x</li>
+            </ul>
+        </div>
+        
+        <div class="bacground2">
+            <ul class="lig3">
+                <li>CE</li>
+                <li onclick="clean()">C</li>
+                <li class="bouton" onclick="back()">⌫</li>
+                <li class="boutonx" onclick="eve('/')">÷</li>
+            </ul>
+        
+            <ul class="lig4">
+                <li class="bouton" onclick="eve(7)">7</li>
+                <li class="bouton" onclick="eve(8)">8</li>
+                <li class="bouton" onclick="eve(9)">9</li>
+                <li onclick="eve('*')">×</li>
+            </ul>
+        
+            <ul class="lig5">
+                <li class="bouton" onclick="eve('4')">4</li>
+                <li class="bouton" onclick="eve('5')">5</li>
+                <li class="bouton" onclick="eve('6')">6</li>
+                <li onclick="eve('-')">-</li>
+            </ul>
+        
+            <ul class="lig6">
+                <li class="bouton" onclick="eve('1')">1</li>
+                <li class="bouton" onclick="eve('2')">2</li>
+                <li class="bouton" onclick="eve('3')">3</li>
+                <li onclick="eve('+')">+</li>
+            </ul>
+        
+            <ul class="lig7">
+                <li class="bouton" onclick="eve('±')">±</li>
+                <li class="bouton" onclick="eve(0)">0</li>
+                <li class="bouton" onclick="eve(',')">,</li>
+                <li Class="egale" onclick="egal()">=</li>
+            </ul>
+        </div>
+        
+    </div>
+
+   
+
+</body>
+
+</html>

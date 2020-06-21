@@ -1,0 +1,172 @@
+body{
+    margin: 0px;
+    padding: 0%;
+    background-color: bisque;
+}
+.contenu{
+    background: white;
+    margin: 0px;
+    padding:0px ;
+    border: 1px solid rgb(165, 165, 231);
+    margin: 20px auto;
+    width: 450px;
+    height: 700px;
+}
+.ligne2,.ligne3,.ligne4,.ligne5,.ligne6,.ligne7{
+    display: flex;
+}
+.nom{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    /* text-align: center; */
+}
+.liste{
+    font-size: 20px;
+    display: flex;
+    padding-bottom: 20px;
+}
+.egal{
+    margin-right: 40px;
+    margin-left: 20px;
+}
+.stand{
+    font-weight: bold;
+    padding-bottom: 20px;
+    
+}
+.entete{
+    padding-bottom: 12px;
+}
+input#saisie{
+    text-align: right;
+    background-color: white;
+    color:black;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 20px;
+    width: 91%;
+    height: 50px;
+    border: none;
+}
+.lig1,.lig2,.lig3,.lig4,.lig5,.lig6,.lig7{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    display: flex;
+    text-align: center;
+}
+.lig1 li:hover{
+    background:  rgba(210, 224, 226, 0.8);
+}
+.lig2 li:hover{
+    background:  rgba(210, 224, 226, 0.8);
+}
+.lig3 li:hover{
+    background:  rgba(210, 224, 226, 0.8);
+}
+.lig4 li:hover{
+    background:  rgba(210, 224, 226, 0.8);
+}
+.lig5 li:hover{
+    background:  rgba(210, 224, 226, 0.8);
+}
+.lig6 li:hover{
+    background:  rgba(210, 224, 226, 0.8);
+}
+.lig7 li:hover{
+    background:  rgba(210, 224, 226, 0.8);
+}
+
+
+.lig1 li{
+    /* border: 1px solid red; */
+    text-decoration: none;
+    list-style: none;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+}
+.lig1{
+    border-bottom: 1px solid rgba(224, 224, 224, 0.5);
+}
+.li1{
+    opacity: 0.6;
+}
+.lig2 li{
+    font-size: 30px;
+    /* border: 1px solid red; */
+    text-decoration: none;
+    list-style: none;
+    width: 113px;
+    height: 70px;
+    line-height: 70px;
+}
+.lig3 li{
+    font-size: 25px;
+    /* border: 1px solid red; */
+    text-decoration: none;
+    list-style: none;
+    width: 113px;
+    height: 70px;
+    line-height: 70px;
+}
+.lig4 li{
+    font-size: 30px;
+    /* border: 1px solid red; */
+    text-decoration: none;
+    list-style: none;
+    width: 113px;
+    height: 70px;
+    line-height: 70px;
+}
+.lig5 li{
+    font-size: 30px;
+    /* border: 1px solid red; */
+    text-decoration: none;
+    list-style: none;
+    width: 113px;
+    height: 70px;
+    line-height: 70px;
+}
+.lig6 li{
+    font-size: 30px;
+    /* border: 1px solid red; */
+    text-decoration: none;
+    list-style: none;
+    width: 113px;
+    height: 70px;
+    line-height: 70px;
+}
+.lig7 li{
+    font-size: 30px;
+    /* border: 1px solid red; */
+    text-decoration: none;
+    list-style: none;
+    width: 113px;
+    height: 70px;
+    line-height: 70px;
+}
+.bouton{
+    font-weight: bold;
+}
+.boutonx{
+    font-size: 40px;
+}
+.bacground2{
+    background-color: rgba(224, 224, 224, 0.596);
+}
+button{
+    height: 0px;
+    width: 75px;
+}
+button:focus {
+    text-decoration: none;
+    outline:none;
+    border: none;
+    box-shadow: none;
+  }
+/* .bacground1{
+    background: white;
+} */
